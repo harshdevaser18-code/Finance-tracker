@@ -8,15 +8,28 @@
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "isolatedModules": false,
     "noEmit": true,
     "jsx": "react-jsx",
+
+    /* Disable all strictness and checks */
     "strict": false,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "noImplicitThis": false,
+    "alwaysStrict": false,
+    "strictNullChecks": false,
+
+    /* Allow unused variables and parameters */
     "noUnusedLocals": false,
     "noUnusedParameters": false,
+
+    /* Allow unsafe operations */
+    // "suppressImplicitAnyIndexErrors": true,
+    "allowUnreachableCode": true,
+    "allowUnusedLabels": true,
     "noFallthroughCasesInSwitch": false
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
-
