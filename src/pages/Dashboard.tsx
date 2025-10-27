@@ -34,7 +34,7 @@ export default function Dashboard() {
 
   const totalExpenses = expenses.reduce((sum, e) => sum + e.amount, 0)
   const totalSavings = userIncome - totalExpenses
-  const savingsPercentage = userIncome > 0 ? ((totalSavings / userIncome) * 100).toFixed(1) : 0
+  const savingsPercentage: string = userIncome > 0 ? ((totalSavings / userIncome) * 100).toFixed(1) : '0'
 
   const COLORS = ['#0ea5e9', '#3b82f6', '#6366f1', '#8b5cf6', '#ec4899']
 
